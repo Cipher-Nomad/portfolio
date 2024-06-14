@@ -8,6 +8,8 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
+import { div } from "three/examples/jsm/nodes/Nodes.js";
+import { InfiniteMovingCards } from "./InfiniteMovingCards";
 
 export const BentoGrid = ({
     className,
@@ -47,8 +49,9 @@ export const BentoGridItem = ({
     titleClassName?: string;
     spareImg?: string;
 }) => {
-    const leftLists = ["React", "Express", "Typescript"];
-    const rightLists = ["Node.js", "NextJS", "MongoDB"];
+    const frontend = ["Next.js", "Recoil", "React", "TailwindCSS"];
+    const backend = ["Node.js", "Express", "MongoDB", "PostgreSQL", "Typescript"];
+    const additional = ["Docker", "AWS", "Next Auth"]
 
     const [copied, setCopied] = useState(false);
 
@@ -62,7 +65,7 @@ export const BentoGridItem = ({
     };
 
     const handleCopy = () => {
-        const text = "hsu@jsmastery.pro";
+        const text = "akashsg1398@gmail.com";
         navigator.clipboard.writeText(text);
         setCopied(true);
     };
@@ -124,7 +127,7 @@ export const BentoGridItem = ({
 
                     {id === 2 && <GridGlobe />}
 
-                    {id === 3 && (
+                    {/* {id === 3 && (
                         <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
                             <div className="flex flex-col gap-3 md:gap-3 lg:gap-2">
                                 {leftLists.map((item, i) => (
@@ -151,7 +154,30 @@ export const BentoGridItem = ({
                                 ))}
                             </div>
                         </div>
-                    )}
+                    )} */
+                        id === 3 && (
+                            <div>
+                                <div>
+                                    <InfiniteMovingCards
+                                        items={frontend}
+                                        direction="right"
+                                        speed="fast" />
+                                </div>
+                                <div>
+                                    <InfiniteMovingCards
+                                        items={backend}
+                                        direction="left"
+                                        speed="normal" />
+                                </div>
+                                <div>
+                                    <InfiniteMovingCards
+                                        items={additional}
+                                        direction="right"
+                                        speed="fast" />
+                                </div>
+                            </div>
+                        )
+                    }
                     {id === 6 && (
                         <div className="mt-5 relative">
                             <div
