@@ -78,14 +78,19 @@ export const projects = [
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/next.svg", "/app.svg"],
     link: "https://banking-app-horizon.vercel.app",
   },
-  // {
-  //   id: 2,
-  //   title: "Yoom - Video Conferencing App",
-  //   des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-  //   img: "/p2.svg",
-  //   iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-  //   link: "https://github.com/adrianhajdin/zoom-clone",
-  // },
+  {
+    id: 2,
+    title: "Tech Haven: Innovate Your Tech Shopping",
+    des: "Explore a seamless tech shopping experience with a comprehensive product catalog, intuitive search, and easy checkout.",
+    img: "/techHaven.svg",
+    iconLists: [
+      "/next.svg",
+      "/stripe-icon.svg",
+      "/ts.svg",
+      "/payload-seeklogo.svg",
+    ],
+    link: "https://ecomm.payloadcms.app",
+  },
   // {
   //   id: 3,
   //   title: "AI Image SaaS - Canva Application",
