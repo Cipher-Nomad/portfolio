@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building an Ecommerce website",
+    title: "Currently building an Ecom website without CMS",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -80,14 +80,14 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Tech Haven: Innovate Your Tech Shopping",
+    title: "Tech Haven - Innovate Your Tech Shopping",
     des: "Explore a seamless tech shopping experience with a comprehensive product catalog, intuitive search, and easy checkout.",
     img: "/techHaven.svg",
     iconLists: [
       "/next.svg",
       "/stripe-icon.svg",
       "/ts.svg",
-      "/payload-seeklogo.svg",
+      "/payload_CMS_dark.svg",
     ],
     link: "https://ecomm.payloadcms.app",
   },
